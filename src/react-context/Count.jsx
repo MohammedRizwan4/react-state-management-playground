@@ -1,4 +1,7 @@
-const Count = ({ count }) => {
+import { useCountContext } from "./CountProvider";
+
+const Count = () => {
+  const { count } = useCountContext();
   return (
     <div className="main-border">
       Count Component <br />
