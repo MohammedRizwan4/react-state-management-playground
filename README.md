@@ -1,12 +1,59 @@
-# React + Vite
+# React State Management Playground
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **React State Management Playground** that demonstrates and compares various client-side state management solutions in React. It is designed for learning, experimentation, and reference.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Multiple State Management Approaches:**
+  - React Context API
+  - Redux
+  - Zustand
+  - Jotai (including rookie and persist variants)
+  - Classic React state
+  - Optimized React rendering techniques
+- **Modular Examples:** Each approach is implemented in its own module for easy comparison.
+- **React Router Navigation:** Quickly switch between different state management demos.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### Running the App
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open your browser and navigate to the local server address (usually `http://localhost:5173/`).
+
+## Project Structure
+
+```
+src/
+  App.jsx                # Main app with navigation
+  react/                 # Classic React state example
+  react-less-render/     # Optimized React rendering
+  react-context/         # React Context API example
+  redux/                 # Redux example
+  zustand/               # Zustand example
+  jotai/                 # Jotai example
+  jotai-rookie/          # Jotai rookie example
+  jotai-persist/         # Jotai persist example
+```
+
+## License
+
+MIT
