@@ -6,6 +6,7 @@ import { Page as ReactContextExample } from "./react-context/Page";
 import { Page as ReactReduxExample } from "./redux/Page";
 import { Page as ReactZustand } from "./zustand/Page";
 import { Page as JotaiRookie } from "./jotai-rookie/Page";
+import { Page as Jotai } from "./jotai/Page";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Link to="/react-redux">React Redux</Link>
         <Link to="/zustand">Zustand</Link>
         <Link to="/jotai-rookie">Jotai Rookie</Link>
+        <Link to="/jotai">Jotai</Link>
       </nav>
       <Routes>
         <Route path="react" element={<ReactDefault />} />
@@ -25,6 +27,7 @@ function App() {
         <Route path="/react-redux" element={<ReactReduxExample />} />
         <Route path="/zustand" element={<ReactZustand />} />
         <Route path="/jotai-rookie" element={<JotaiRookie />} />
+        <Route path="/jotai" element={<Jotai />} />
       </Routes>
     </BrowserRouter>
   );
