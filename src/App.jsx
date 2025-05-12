@@ -7,6 +7,7 @@ import { Page as ReactReduxExample } from "./redux/Page";
 import { Page as ReactZustand } from "./zustand/Page";
 import { Page as JotaiRookie } from "./jotai-rookie/Page";
 import { Page as Jotai } from "./jotai/Page";
+import { Page as JotaiPersist } from "./jotai-persist/Page";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Link to="/zustand">Zustand</Link>
         <Link to="/jotai-rookie">Jotai Rookie</Link>
         <Link to="/jotai">Jotai</Link>
+        <Link to="/jotai-persist">Jotai Persist</Link>
       </nav>
       <Routes>
         <Route path="react" element={<ReactDefault />} />
@@ -28,6 +30,7 @@ function App() {
         <Route path="/zustand" element={<ReactZustand />} />
         <Route path="/jotai-rookie" element={<JotaiRookie />} />
         <Route path="/jotai" element={<Jotai />} />
+        <Route path="/jotai-persist" element={<JotaiPersist />} />
       </Routes>
     </BrowserRouter>
   );
