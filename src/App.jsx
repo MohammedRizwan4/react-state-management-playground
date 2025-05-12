@@ -5,6 +5,7 @@ import { Page as ReactLessRender } from "./react-less-render/Page";
 import { Page as ReactContextExample } from "./react-context/Page";
 import { Page as ReactReduxExample } from "./redux/Page";
 import { Page as ReactZustand } from "./zustand/Page";
+import { Page as JotaiRookie } from "./jotai-rookie/Page";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Link to="/react-context">React Context</Link>
         <Link to="/react-redux">React Redux</Link>
         <Link to="/zustand">Zustand</Link>
+        <Link to="/jotai-rookie">Jotai Rookie</Link>
       </nav>
       <Routes>
         <Route path="react" element={<ReactDefault />} />
@@ -22,6 +24,7 @@ function App() {
         <Route path="/react-context" element={<ReactContextExample />} />
         <Route path="/react-redux" element={<ReactReduxExample />} />
         <Route path="/zustand" element={<ReactZustand />} />
+        <Route path="/jotai-rookie" element={<JotaiRookie />} />
       </Routes>
     </BrowserRouter>
   );
